@@ -1,3 +1,13 @@
+#Model SQL Interpreter
+**The task of implementing a model SQL interpreter is divided into the following subtasks:
+1. Implementation of the "Client-Server" architecture.
+2. Implementation of the SQL interpreter.
+3. Implementation of a model SQL server based on the developed interpreter and provided class library for working with data files.
+4. Implementation of the user interface with a model SQL server.
+5. Implementation of a model database that demonstrates the performance of programs.
+The implementation language is C++. **
+
+
 One client. Client and server on a computer network
 The client receives a SQL request from the user, analyzes it, and in case of an error informs the user about it, otherwise it sends the request to the server in some internal representation. The server accesses the database, determines the response to the request and sends it to the client. The client gives the server a response to the user.
 
