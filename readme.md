@@ -15,8 +15,8 @@ The client receives a SQL request from the user, analyzes it, and in case of an 
 
 
 Compilation:
-*make server
-*make client
+* make server
+* make client
 
 
 Next, start the server, and then the client. I tested on one computer, so I used localhost:
