@@ -15,39 +15,26 @@ The client receives a SQL request from the user, analyzes it, and in case of an 
 
 
 Compilation:
-
-make server
-
-make client
+*make server
+*make client
 
 
-Next, start the server, and then the client.
-
-I tested on one computer, so I used localhost:
-
-./client localhost 1234 (opens connection to localhost address and port 1234)
-
-./server 1234 (passing the port)
+Next, start the server, and then the client. I tested on one computer, so I used localhost:
+*./client localhost 1234 (opens connection to localhost address and port 1234)
+*./server 1234 (passing the port)
 
 The client receives the user's request and checks its correctness, if it turned out to be correct, it sends the request already in the internal representation to the server.
 The server receives the correct request, analyzes it, if it encounters a where-clause, expression or logical expression, calls the appropriate functions. Next, the server sends a response to the client, in the case of SELECT, the client displays a temporary table, and in the case of UPDATE, the client receives a temporary table compiled by the server, turns this table into our original table and deletes the temporary one.
 
 
 Internal representation:
-
 the first digit from 1 to 6 is responsible for the type of offer
-
-"1" - SELECT
-
-"2" - INSERT
-
-"3" - UPDATE
-
-"4" - DELETE
-
-"5" - CREATE
-
-"6" - DROP
+*"1" - SELECT
+*"2" - INSERT
+*"3" - UPDATE
+*"4" - DELETE
+*"5" - CREATE
+*"6" - DROP
 
 Next comes the name of the table.
 
@@ -57,14 +44,10 @@ Next comes either "*"(!), or a number from 1 to 4 (WHERE clause type)
 
 
 Where clause:
-
-"1" - IN/NOTIN
-
-"2" - LIKE/NOTLIKE
-
-"3" - ALL
-
-"4" - boolean expression
+*"1" - IN/NOTIN
+*"2" - LIKE/NOTLIKE
+*"3" - ALL
+*"4" - boolean expression
 
 
 All expressions and logical expressions are presented as Reverse Polish notation
