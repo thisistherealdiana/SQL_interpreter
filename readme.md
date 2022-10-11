@@ -1,11 +1,11 @@
 Model SQL Interpreter
 ============
 **The task of implementing a model SQL interpreter is divided into the following subtasks:**
-**1. Implementation of the "Client-Server" architecture.**
-**2. Implementation of the SQL interpreter.**
-**3. Implementation of a model SQL server based on the developed interpreter and provided class library for working with data files.**
-**4. Implementation of the user interface with a model SQL server.**
-**5. Implementation of a model database that demonstrates the performance of programs.**
+1. **Implementation of the "Client-Server" architecture.**
+2. **Implementation of the SQL interpreter.**
+3. **Implementation of a model SQL server based on the developed interpreter and provided class library for working with data files.**
+4. **Implementation of the user interface with a model SQL server.**
+5. **Implementation of a model database that demonstrates the performance of programs.**
 **The implementation language is C++.**
 
 
